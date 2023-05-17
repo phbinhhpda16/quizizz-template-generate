@@ -1,10 +1,10 @@
 import pandas as pd
 
 # Path and sheet settings
-path_data_source = 'E:\Code\quizizz-template-generate\Source.xlsx'  # Specify the path to the source Excel file
+path_data_source = '...\quizizz-template-generate\Source.xlsx'  # Specify the path to the source Excel file
 sheet_data_source = "Sheet1"  # Specify the name of the sheet in the source Excel file
 usecols_data_source = "A:H"  # Specify the columns to be read from the source Excel file
-result_path = 'E:\Code\quizizz-template-generate\Result.xlsx'  # Specify the path for the result Excel file
+result_path = '...\quizizz-template-generate\Result.xlsx'  # Specify the path for the result Excel file
 sheet_result = 'Sheet1'  # Specify the name of the sheet in the result Excel file
 default_question_type = "Multiple Choice"
 default_duration = 30   # Specify the default duration
