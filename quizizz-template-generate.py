@@ -9,8 +9,9 @@ sheet_result = 'Sheet1'  # Specify the name of the sheet in the result Excel fil
 default_question_type = "Multiple Choice"
 default_duration = 30   # Specify the default duration
 
-# Read the data from the source Excel file
+# Read the data from the source Excel file and remove rows that are entirely blank
 data = pd.read_excel(path_data_source, sheet_name = sheet_data_source, usecols = usecols_data_source)
+data.dropna(how='all', inplace=True)
 
 # Create a writer to save the result to an Excel file
 writer = pd.ExcelWriter(result_path, engine = 'xlsxwriter')
